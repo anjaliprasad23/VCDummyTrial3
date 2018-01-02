@@ -6,6 +6,19 @@ SOURCES += main.cpp
 
 RESOURCES += qml.qrc
 
+#.pro file
+#Application version
+VERSION_MAJOR = 4
+VERSION_MINOR = 5
+VERSION_BUILD = 6
+
+DEFINES += "VERSION_MAJOR=$$VERSION_MAJOR"\
+       "VERSION_MINOR=$$VERSION_MINOR"\
+       "VERSION_BUILD=$$VERSION_BUILD"
+
+#Target version
+VERSION = $${VERSION_MAJOR}.$${VERSION_MINOR}.$${VERSION_BUILD}
+
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
 
