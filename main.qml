@@ -6,7 +6,7 @@ ApplicationWindow {
     visible: true
     width: 640
     height: 480
-    title: qsTr("V1.1.09")
+    title: qsTr("V1.1.10")
 
     SwipeView {
         id: swipeView
@@ -59,6 +59,9 @@ ApplicationWindow {
         }
         TabButton {
             text: qsTr("Dummy button9")
+        }
+        TabButton {
+            text: qsTr("Dummy button10")
         }
     }
 }
